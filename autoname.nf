@@ -36,7 +36,7 @@ process autolin {
     script:
     """
     name=\$(basename ${pb_gz} .pb.gz)
-    python3 ${projectDir}/propose_sublineages.py --input ${pb_gz} -o \${name}_annoted.pb  --recursive -t 0 -f 0
+    python3 ${projectDir}/bin/propose_sublineages.py --input ${pb_gz} -o \${name}_annoted.pb  --recursive -t 0 -f 0
     """
     
 }
@@ -92,7 +92,7 @@ process autolin_check{
     script:
     """
     name=\$(basename ${txt_file} .txt)
-    python3 ${projectDir}/autolin_compare.py --input ${txt_file} --output \${name}.csv --tree_dir ${projectDir}/results/annotated_trees_nh 
+    python3 ${projectDir}/bin/autolin_compare.py --input ${txt_file} --output \${name}.csv --tree_dir ${projectDir}/results/annotated_trees_nh 
     """
 }
 
@@ -109,7 +109,7 @@ process colorTree{
 
     script:
     """
-    python3 ${projectDir}/color_tree.py --input ${tree} 
+    python3 ${projectDir}/bin/color_tree.py --input ${tree} 
     """
 }
 

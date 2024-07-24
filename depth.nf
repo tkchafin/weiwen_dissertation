@@ -19,7 +19,7 @@ process depth_generation{
     """
     base_name=\$(basename ${fasta_file} .fa)
     out_name=\${base_name/_seqfile/_depth.tsv}
-    python3 ${projectDir}/depth_generation.py -fasta ${fasta_file} -depth 1000 -out \${out_name}
+    python3 ${projectDir}/bin/depth_generation.py -fasta ${fasta_file} -depth 1000 -out \${out_name}
     """
 }
 

@@ -21,7 +21,7 @@ process barcode_generation {
     base_name=\$(basename ${vcf} .vcf)
     pb=/home/weiwen/code/results/annotated_trees_pb/\${base_name}_annoted.pb
     out=\${base_name}_barcode 
-    python3 ${projectDir}/convert_barcode_modified.py --input \${pb} --vcf ${vcf} --outname \${out}
+    python3 ${projectDir}/bin/convert_barcode_modified.py --input \${pb} --vcf ${vcf} --outname \${out}
     """
 }
 
@@ -40,7 +40,7 @@ process sampling{
     """
     base_name=\$(basename ${barcode} .csv)
     out_name=\${base_name/_barcode/}
-    python3 ${projectDir}/scripts/barcode_sampling.py --barcodes ${barcode} -r 5 -m 2 -M 5 -f skewed -a 4 -o ./\${out_name}
+    python3 ${projectDir}/bin/scripts/barcode_sampling.py --barcodes ${barcode} -r 5 -m 2 -M 5 -f skewed -a 4 -o ./\${out_name}
     """
 }
 

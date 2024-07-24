@@ -1,0 +1,169 @@
+Jul-23 19:45:15.192 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm --cpus 4
+Jul-23 19:45:15.414 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jul-23 19:45:15.439 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/tc25/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jul-23 19:45:15.449 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-23 19:45:15.450 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-23 19:45:15.455 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jul-23 19:45:15.469 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-23 19:45:15.490 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/tc25/projects/weiwen_dissertation/nextflow.config
+Jul-23 19:45:15.492 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/tc25/projects/weiwen_dissertation/nextflow.config
+Jul-23 19:45:15.521 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/tc25/.nextflow/secrets/store.json
+Jul-23 19:45:15.525 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@17ca8b92] - activable => nextflow.secret.LocalSecretsProvider@17ca8b92
+Jul-23 19:45:15.541 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Jul-23 19:45:16.384 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cleanup, mamba, conda, singularity, arm, docker]
+Jul-23 19:45:16.410 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-23 19:45:16.419 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [cheeky_koch] DSL2 - revision: 9d00c25b15
+Jul-23 19:45:16.420 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-23 19:45:16.420 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-23 19:45:16.482 [main] DEBUG nextflow.Session - Session UUID: 0eedbd8a-417c-4812-bd34-39ef1ae2c0ed
+Jul-23 19:45:16.482 [main] DEBUG nextflow.Session - Run name: cheeky_koch
+Jul-23 19:45:16.482 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-23 19:45:16.487 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-23 19:45:16.490 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-23 19:45:16.506 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (07:19 BST)
+  System: Mac OS X 14.5
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.11+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 38484@mib119777s [10.54.222.45]
+  CPUs: 8 - Mem: 16 GB (80.7 MB) - Swap: 1 GB (939.5 MB)
+Jul-23 19:45:16.526 [main] DEBUG nextflow.Session - Work-dir: /Users/tc25/projects/weiwen_dissertation/work [Mac OS X]
+Jul-23 19:45:16.563 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-23 19:45:16.568 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-23 19:45:16.610 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-23 19:45:16.621 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-23 19:45:16.675 [main] DEBUG nextflow.Session - Session start
+Jul-23 19:45:16.779 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-23 19:45:17.446 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.446 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.459 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-23 19:45:17.465 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-23 19:45:17.472 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-23 19:45:17.589 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.589 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.632 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.632 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.656 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.656 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.679 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.680 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.688 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.688 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.705 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.705 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.710 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:45:17.710 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:45:17.716 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SIMULATE:phastSim, SIMULATE:checkAlignments, SIMULATE:collectReports, collectReports, SIMULATE:makeUnique, simulateTrees, selectAndCleanTrees, checkAlignments, makeUnique, phastSim, rescaleTrees, SIMULATE:rescaleTrees, SIMULATE:generateReferenceGenome, SIMULATE:selectAndCleanTrees, generateReferenceGenome, SIMULATE:simulateTrees
+Jul-23 19:45:17.717 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:simulateTrees
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:selectAndCleanTrees
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:rescaleTrees
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:generateReferenceGenome
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:phastSim
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:checkAlignments
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:collectReports
+Jul-23 19:45:17.718 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:makeUnique
+Jul-23 19:45:17.718 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_1edd3e70a54cf9a1: /Users/tc25/projects/weiwen_dissertation/./subworkflows/simulate.nf
+  Script_f8ff6cbd77970ee4: /Users/tc25/projects/weiwen_dissertation/main.nf
+Jul-23 19:45:17.718 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-23 19:45:17.718 [main] DEBUG nextflow.Session - Session await
+Jul-23 19:45:17.913 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.914 [Task submitter] INFO  nextflow.Session - [1e/fccd06] Submitted process > SIMULATE:simulateTrees (3)
+Jul-23 19:45:17.919 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.927 [Task submitter] INFO  nextflow.Session - [6a/042896] Submitted process > SIMULATE:simulateTrees (1)
+Jul-23 19:45:17.938 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.943 [Task submitter] INFO  nextflow.Session - [af/df46dd] Submitted process > SIMULATE:simulateTrees (9)
+Jul-23 19:45:17.949 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.952 [Task submitter] INFO  nextflow.Session - [ea/260556] Submitted process > SIMULATE:simulateTrees (2)
+Jul-23 19:45:17.957 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.959 [Task submitter] INFO  nextflow.Session - [ae/79b4a5] Submitted process > SIMULATE:simulateTrees (7)
+Jul-23 19:45:17.965 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.969 [Task submitter] INFO  nextflow.Session - [5c/4169e6] Submitted process > SIMULATE:simulateTrees (5)
+Jul-23 19:45:17.978 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.985 [Task submitter] INFO  nextflow.Session - [68/b82232] Submitted process > SIMULATE:simulateTrees (4)
+Jul-23 19:45:17.993 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:17.998 [Task submitter] INFO  nextflow.Session - [18/38a222] Submitted process > SIMULATE:simulateTrees (8)
+Jul-23 19:45:23.191 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SIMULATE:simulateTrees (2); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ea/2605562dd4a5bbba7170c4a5f6fae9]
+Jul-23 19:45:23.191 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-23 19:45:23.193 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SIMULATE:simulateTrees (7); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ae/79b4a5b586d262611b4a268777bd43]
+Jul-23 19:45:23.194 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: SIMULATE:simulateTrees (4); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/68/b822320a2503c439bf920ebcb872e2]
+Jul-23 19:45:23.195 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:23.195 [Task submitter] INFO  nextflow.Session - [01/85959f] Submitted process > SIMULATE:simulateTrees (6)
+Jul-23 19:45:23.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SIMULATE:simulateTrees (1); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6a/042896943cd2971d8164340dd470ac]
+Jul-23 19:45:23.197 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SIMULATE:simulateTrees (9); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/af/df46dd9dd5371bff4212273b865b94]
+Jul-23 19:45:23.198 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (2); work-dir=/Users/tc25/projects/weiwen_dissertation/work/ea/2605562dd4a5bbba7170c4a5f6fae9
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (2)` terminated with an error exit status (125)
+Jul-23 19:45:23.198 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:23.198 [Task submitter] INFO  nextflow.Session - [16/7d3a53] Submitted process > SIMULATE:simulateTrees (10)
+Jul-23 19:45:23.217 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'SIMULATE:simulateTrees (2)'
+
+Caused by:
+  Process `SIMULATE:simulateTrees (2)` terminated with an error exit status (125)
+
+
+Command executed:
+
+  simulate_trees.py --num_tips 100 --sd_fixed 0.1 --reps 10 --out ./sim --seed 42
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  Unable to find image 'tkchafin/dendropy:latest' locally
+  latest: Pulling from tkchafin/dendropy
+  Digest: sha256:3f70bafdc348451fbc6e73d868ed73332b2fa766d334f6130be12353d3bd70eb
+  Status: Image is up to date for tkchafin/dendropy:latest
+  docker: image with reference docker.io/tkchafin/dendropy:latest was found but does not match the specified platform: wanted linux/amd64, actual: linux/arm64.
+  See 'docker run --help'.
+
+Work dir:
+  /Users/tc25/projects/weiwen_dissertation/work/ea/2605562dd4a5bbba7170c4a5f6fae9
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jul-23 19:45:23.221 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (4); work-dir=/Users/tc25/projects/weiwen_dissertation/work/68/b822320a2503c439bf920ebcb872e2
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (4)` terminated with an error exit status (125)
+Jul-23 19:45:23.221 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (7); work-dir=/Users/tc25/projects/weiwen_dissertation/work/ae/79b4a5b586d262611b4a268777bd43
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (7)` terminated with an error exit status (125)
+Jul-23 19:45:23.223 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (9); work-dir=/Users/tc25/projects/weiwen_dissertation/work/af/df46dd9dd5371bff4212273b865b94
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (9)` terminated with an error exit status (125)
+Jul-23 19:45:23.224 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (1); work-dir=/Users/tc25/projects/weiwen_dissertation/work/6a/042896943cd2971d8164340dd470ac
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (1)` terminated with an error exit status (125)
+Jul-23 19:45:23.225 [TaskFinalizer-1] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Jul-23 19:45:23.240 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SIMULATE:simulateTrees (8); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/18/38a2224325b97a3095a14c8b0a688e]
+Jul-23 19:45:23.250 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (8); work-dir=/Users/tc25/projects/weiwen_dissertation/work/18/38a2224325b97a3095a14c8b0a688e
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (8)` terminated with an error exit status (125)
+Jul-23 19:45:23.252 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-23 19:45:23.264 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SIMULATE:simulateTrees (3); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/1e/fccd0630109ddffbf654b0714d16e3]
+Jul-23 19:45:23.264 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (3); work-dir=/Users/tc25/projects/weiwen_dissertation/work/1e/fccd0630109ddffbf654b0714d16e3
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (3)` terminated with an error exit status (125)
+Jul-23 19:45:23.519 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SIMULATE:simulateTrees (5); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/5c/4169e6071bd351f333ed5be1c955f2]
+Jul-23 19:45:23.520 [TaskFinalizer-8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (5); work-dir=/Users/tc25/projects/weiwen_dissertation/work/5c/4169e6071bd351f333ed5be1c955f2
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (5)` terminated with an error exit status (125)
+Jul-23 19:45:24.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SIMULATE:simulateTrees (6); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/01/85959fc790a3eb1b244d155b3728f5]
+Jul-23 19:45:24.408 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (6); work-dir=/Users/tc25/projects/weiwen_dissertation/work/01/85959fc790a3eb1b244d155b3728f5
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (6)` terminated with an error exit status (125)
+Jul-23 19:45:24.414 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: SIMULATE:simulateTrees (10); status: COMPLETED; exit: 125; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/16/7d3a5353611457343dad75fc365579]
+Jul-23 19:45:24.415 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SIMULATE:simulateTrees (10); work-dir=/Users/tc25/projects/weiwen_dissertation/work/16/7d3a5353611457343dad75fc365579
+  error [nextflow.exception.ProcessFailedException]: Process `SIMULATE:simulateTrees (10)` terminated with an error exit status (125)
+Jul-23 19:45:24.415 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-23 19:45:24.416 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-23 19:45:24.418 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-23 19:45:24.436 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=10; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=44.2s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=8; peakCpus=8; peakMemory=3.9 GB; ]
+Jul-23 19:45:24.503 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-23 19:45:24.525 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-23 19:45:24.525 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

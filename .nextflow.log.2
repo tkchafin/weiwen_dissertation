@@ -1,0 +1,571 @@
+Jul-23 19:44:02.946 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker --cpus 4
+Jul-23 19:44:03.305 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jul-23 19:44:03.329 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/tc25/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jul-23 19:44:03.347 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-23 19:44:03.348 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-23 19:44:03.352 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jul-23 19:44:03.368 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-23 19:44:03.408 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/tc25/projects/weiwen_dissertation/nextflow.config
+Jul-23 19:44:03.410 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/tc25/projects/weiwen_dissertation/nextflow.config
+Jul-23 19:44:03.473 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/tc25/.nextflow/secrets/store.json
+Jul-23 19:44:03.478 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@17ca8b92] - activable => nextflow.secret.LocalSecretsProvider@17ca8b92
+Jul-23 19:44:03.510 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Jul-23 19:44:04.576 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cleanup, mamba, conda, singularity, arm, docker]
+Jul-23 19:44:04.651 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-23 19:44:04.663 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [mad_poitras] DSL2 - revision: 9d00c25b15
+Jul-23 19:44:04.664 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-23 19:44:04.664 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-23 19:44:04.748 [main] DEBUG nextflow.Session - Session UUID: afd793f9-265f-4494-b3f8-36118deeb446
+Jul-23 19:44:04.749 [main] DEBUG nextflow.Session - Run name: mad_poitras
+Jul-23 19:44:04.749 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-23 19:44:04.757 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-23 19:44:04.762 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-23 19:44:04.782 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (07:19 BST)
+  System: Mac OS X 14.5
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.11+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 35248@mib119777s [10.54.222.45]
+  CPUs: 8 - Mem: 16 GB (84.5 MB) - Swap: 1 GB (939.5 MB)
+Jul-23 19:44:04.792 [main] DEBUG nextflow.Session - Work-dir: /Users/tc25/projects/weiwen_dissertation/work [Mac OS X]
+Jul-23 19:44:04.829 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-23 19:44:04.841 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-23 19:44:04.874 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-23 19:44:04.883 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-23 19:44:04.932 [main] DEBUG nextflow.Session - Session start
+Jul-23 19:44:05.079 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-23 19:44:05.887 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:05.887 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:05.896 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-23 19:44:05.901 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-23 19:44:05.904 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-23 19:44:06.057 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.057 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.125 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.125 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.156 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.156 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.181 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.181 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.188 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.188 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.203 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.203 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.212 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 19:44:06.212 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 19:44:06.215 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SIMULATE:phastSim, SIMULATE:checkAlignments, SIMULATE:collectReports, collectReports, SIMULATE:makeUnique, simulateTrees, selectAndCleanTrees, checkAlignments, makeUnique, phastSim, rescaleTrees, SIMULATE:rescaleTrees, SIMULATE:generateReferenceGenome, SIMULATE:selectAndCleanTrees, generateReferenceGenome, SIMULATE:simulateTrees
+Jul-23 19:44:06.215 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Jul-23 19:44:06.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:simulateTrees
+Jul-23 19:44:06.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:selectAndCleanTrees
+Jul-23 19:44:06.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:rescaleTrees
+Jul-23 19:44:06.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:generateReferenceGenome
+Jul-23 19:44:06.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:phastSim
+Jul-23 19:44:06.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:checkAlignments
+Jul-23 19:44:06.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:collectReports
+Jul-23 19:44:06.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIMULATE:makeUnique
+Jul-23 19:44:06.216 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_f8ff6cbd77970ee4: /Users/tc25/projects/weiwen_dissertation/main.nf
+  Script_1edd3e70a54cf9a1: /Users/tc25/projects/weiwen_dissertation/./subworkflows/simulate.nf
+Jul-23 19:44:06.216 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-23 19:44:06.216 [main] DEBUG nextflow.Session - Session await
+Jul-23 19:44:06.527 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.533 [Task submitter] INFO  nextflow.Session - [fe/0d2324] Submitted process > SIMULATE:simulateTrees (8)
+Jul-23 19:44:06.545 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.551 [Task submitter] INFO  nextflow.Session - [ce/d49389] Submitted process > SIMULATE:simulateTrees (1)
+Jul-23 19:44:06.557 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.559 [Task submitter] INFO  nextflow.Session - [d9/365e75] Submitted process > SIMULATE:simulateTrees (5)
+Jul-23 19:44:06.572 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.573 [Task submitter] INFO  nextflow.Session - [95/7bf61a] Submitted process > SIMULATE:simulateTrees (9)
+Jul-23 19:44:06.583 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.607 [Task submitter] INFO  nextflow.Session - [53/32e628] Submitted process > SIMULATE:simulateTrees (7)
+Jul-23 19:44:06.616 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.619 [Task submitter] INFO  nextflow.Session - [73/c08f42] Submitted process > SIMULATE:simulateTrees (3)
+Jul-23 19:44:06.628 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.639 [Task submitter] INFO  nextflow.Session - [f3/c0ec59] Submitted process > SIMULATE:simulateTrees (4)
+Jul-23 19:44:06.658 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:06.673 [Task submitter] INFO  nextflow.Session - [aa/cec59c] Submitted process > SIMULATE:simulateTrees (6)
+Jul-23 19:44:13.212 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SIMULATE:simulateTrees (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d9/365e75065a3650065eab4b482b30d1]
+Jul-23 19:44:13.214 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-23 19:44:13.224 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:13.225 [Task submitter] INFO  nextflow.Session - [d0/b5b533] Submitted process > SIMULATE:simulateTrees (2)
+Jul-23 19:44:13.257 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-23 19:44:13.400 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SIMULATE:simulateTrees (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/aa/cec59cda44c1c4373cb5f32daf702d]
+Jul-23 19:44:13.409 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:13.412 [Task submitter] INFO  nextflow.Session - [92/cd2c4a] Submitted process > SIMULATE:simulateTrees (10)
+Jul-23 19:44:13.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: SIMULATE:simulateTrees (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f3/c0ec599f99ed0678fe10494bb236f1]
+Jul-23 19:44:13.593 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SIMULATE:simulateTrees (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ce/d49389cb81ec83b5d28207b36df9b0]
+Jul-23 19:44:13.653 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SIMULATE:simulateTrees (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/73/c08f42d0df34fb7601de0ce7f19ef6]
+Jul-23 19:44:13.711 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SIMULATE:simulateTrees (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/95/7bf61a7421a303c1b1d41ab8f33ebf]
+Jul-23 19:44:13.801 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SIMULATE:simulateTrees (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/53/32e62875f64c631019bf22b69eba42]
+Jul-23 19:44:13.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SIMULATE:simulateTrees (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/fe/0d23249c00402f1f74b894b37d2e0c]
+Jul-23 19:44:15.847 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SIMULATE:simulateTrees (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d0/b5b533acd4c6fd6f008702fc8b96e5]
+Jul-23 19:44:15.864 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: SIMULATE:simulateTrees (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/92/cd2c4a7ea849d421b541c7dacfe50c]
+Jul-23 19:44:15.934 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:15.934 [Task submitter] INFO  nextflow.Session - [fc/721617] Submitted process > SIMULATE:selectAndCleanTrees
+Jul-23 19:44:18.678 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: SIMULATE:selectAndCleanTrees; status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/fc/7216173490646fd1159de33d91fdf7]
+Jul-23 19:44:18.728 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.729 [Task submitter] INFO  nextflow.Session - [3b/005033] Submitted process > SIMULATE:rescaleTrees (6)
+Jul-23 19:44:18.731 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.732 [Task submitter] INFO  nextflow.Session - [5e/03e19a] Submitted process > SIMULATE:rescaleTrees (4)
+Jul-23 19:44:18.735 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.735 [Task submitter] INFO  nextflow.Session - [ce/904728] Submitted process > SIMULATE:rescaleTrees (5)
+Jul-23 19:44:18.737 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.737 [Task submitter] INFO  nextflow.Session - [1c/8f3508] Submitted process > SIMULATE:rescaleTrees (2)
+Jul-23 19:44:18.741 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.741 [Task submitter] INFO  nextflow.Session - [73/8941a4] Submitted process > SIMULATE:rescaleTrees (10)
+Jul-23 19:44:18.742 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.742 [Task submitter] INFO  nextflow.Session - [3e/1e634e] Submitted process > SIMULATE:rescaleTrees (8)
+Jul-23 19:44:18.744 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.744 [Task submitter] INFO  nextflow.Session - [60/3d85f1] Submitted process > SIMULATE:rescaleTrees (7)
+Jul-23 19:44:18.749 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:18.749 [Task submitter] INFO  nextflow.Session - [c4/181b9c] Submitted process > SIMULATE:rescaleTrees (13)
+Jul-23 19:44:19.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: SIMULATE:rescaleTrees (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/73/8941a49c59473095365e71b664db18]
+Jul-23 19:44:19.968 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:19.975 [Task submitter] INFO  nextflow.Session - [a3/781859] Submitted process > SIMULATE:rescaleTrees (1)
+Jul-23 19:44:20.046 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: SIMULATE:rescaleTrees (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3e/1e634e7a978f4ee109bb1a00e2ab72]
+Jul-23 19:44:20.049 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.049 [Task submitter] INFO  nextflow.Session - [ce/a48040] Submitted process > SIMULATE:rescaleTrees (3)
+Jul-23 19:44:20.108 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: SIMULATE:rescaleTrees (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/1c/8f35086dc6d879f5ba6948a9dfc553]
+Jul-23 19:44:20.111 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.111 [Task submitter] INFO  nextflow.Session - [89/847a99] Submitted process > SIMULATE:rescaleTrees (9)
+Jul-23 19:44:20.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: SIMULATE:rescaleTrees (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ce/9047286f4acf55ea3713f6671c46f2]
+Jul-23 19:44:20.274 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.274 [Task submitter] INFO  nextflow.Session - [4b/83b152] Submitted process > SIMULATE:rescaleTrees (16)
+Jul-23 19:44:20.376 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: SIMULATE:rescaleTrees (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3b/005033103e0f90b5e1a4257fd5086e]
+Jul-23 19:44:20.379 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.380 [Task submitter] INFO  nextflow.Session - [d2/4a2fd5] Submitted process > SIMULATE:rescaleTrees (11)
+Jul-23 19:44:20.446 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: SIMULATE:rescaleTrees (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c4/181b9cce50ae9557e2e4263e490521]
+Jul-23 19:44:20.449 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.449 [Task submitter] INFO  nextflow.Session - [f0/5eeafc] Submitted process > SIMULATE:rescaleTrees (12)
+Jul-23 19:44:20.539 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: SIMULATE:rescaleTrees (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/5e/03e19a8ae95d3c5a3c8cd29839b681]
+Jul-23 19:44:20.542 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.542 [Task submitter] INFO  nextflow.Session - [02/821dfa] Submitted process > SIMULATE:rescaleTrees (15)
+Jul-23 19:44:20.621 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: SIMULATE:rescaleTrees (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/60/3d85f1c55d01ebf9bc26a1f6e9c9ff]
+Jul-23 19:44:20.624 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:20.624 [Task submitter] INFO  nextflow.Session - [30/969b75] Submitted process > SIMULATE:rescaleTrees (20)
+Jul-23 19:44:21.626 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: SIMULATE:rescaleTrees (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/a3/7818599e2798ac2987ada50ce71ce8]
+Jul-23 19:44:21.629 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:21.629 [Task submitter] INFO  nextflow.Session - [06/a7bdbb] Submitted process > SIMULATE:rescaleTrees (14)
+Jul-23 19:44:21.689 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: SIMULATE:rescaleTrees (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ce/a4804059a49d92af5b064a73847a6d]
+Jul-23 19:44:21.691 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:21.691 [Task submitter] INFO  nextflow.Session - [f3/0df8fa] Submitted process > SIMULATE:rescaleTrees (22)
+Jul-23 19:44:21.833 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: SIMULATE:rescaleTrees (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/89/847a99a1e536ce6eea5a19fec4d4d9]
+Jul-23 19:44:21.837 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:21.837 [Task submitter] INFO  nextflow.Session - [3d/dc90a1] Submitted process > SIMULATE:rescaleTrees (19)
+Jul-23 19:44:21.923 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: SIMULATE:rescaleTrees (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/02/821dfa8c62f7eb8d40cc0bee400407]
+Jul-23 19:44:21.927 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:21.927 [Task submitter] INFO  nextflow.Session - [e6/601ece] Submitted process > SIMULATE:rescaleTrees (23)
+Jul-23 19:44:22.007 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: SIMULATE:rescaleTrees (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/30/969b75fc336123f58bd37ac3ff2d03]
+Jul-23 19:44:22.010 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:22.011 [Task submitter] INFO  nextflow.Session - [63/5fdd1d] Submitted process > SIMULATE:rescaleTrees (24)
+Jul-23 19:44:22.046 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: SIMULATE:rescaleTrees (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/4b/83b152b038c62c8f1d8aee9322875c]
+Jul-23 19:44:22.048 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:22.049 [Task submitter] INFO  nextflow.Session - [e0/5bdeff] Submitted process > SIMULATE:rescaleTrees (17)
+Jul-23 19:44:22.180 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: SIMULATE:rescaleTrees (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d2/4a2fd55aa0cc939e0fc5f0d1b0d6e0]
+Jul-23 19:44:22.182 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:22.182 [Task submitter] INFO  nextflow.Session - [7f/286853] Submitted process > SIMULATE:rescaleTrees (27)
+Jul-23 19:44:22.226 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: SIMULATE:rescaleTrees (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f0/5eeafc1854582ef15e45bd4532bfdc]
+Jul-23 19:44:22.229 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:22.229 [Task submitter] INFO  nextflow.Session - [9d/4022d7] Submitted process > SIMULATE:rescaleTrees (18)
+Jul-23 19:44:23.202 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: SIMULATE:rescaleTrees (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f3/0df8faf8b0eb29e2430d0d86354d54]
+Jul-23 19:44:23.206 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.206 [Task submitter] INFO  nextflow.Session - [e8/1ed4b1] Submitted process > SIMULATE:rescaleTrees (28)
+Jul-23 19:44:23.283 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: SIMULATE:rescaleTrees (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/06/a7bdbbff3aadcc2056dd02d04ffbdb]
+Jul-23 19:44:23.286 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.286 [Task submitter] INFO  nextflow.Session - [3f/7bf2cf] Submitted process > SIMULATE:rescaleTrees (21)
+Jul-23 19:44:23.343 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: SIMULATE:rescaleTrees (24); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/63/5fdd1da8a4c87decf74427b461b305]
+Jul-23 19:44:23.345 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.345 [Task submitter] INFO  nextflow.Session - [be/6ea391] Submitted process > SIMULATE:rescaleTrees (30)
+Jul-23 19:44:23.509 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: SIMULATE:rescaleTrees (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3d/dc90a1327b911cb2b243c5f953869a]
+Jul-23 19:44:23.512 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.512 [Task submitter] INFO  nextflow.Session - [e1/6099db] Submitted process > SIMULATE:rescaleTrees (26)
+Jul-23 19:44:23.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: SIMULATE:rescaleTrees (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/9d/4022d78cca9f898825c7fe7a69157b]
+Jul-23 19:44:23.607 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.607 [Task submitter] INFO  nextflow.Session - [c8/583541] Submitted process > SIMULATE:rescaleTrees (29)
+Jul-23 19:44:23.658 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: SIMULATE:rescaleTrees (23); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e6/601ece6f9bb24ed2b2962d6ff87481]
+Jul-23 19:44:23.660 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.660 [Task submitter] INFO  nextflow.Session - [ae/5c5e24] Submitted process > SIMULATE:rescaleTrees (33)
+Jul-23 19:44:23.734 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: SIMULATE:rescaleTrees (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e0/5bdeffdf62b3d03bd86acb1c0c10f8]
+Jul-23 19:44:23.738 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.738 [Task submitter] INFO  nextflow.Session - [39/86e00e] Submitted process > SIMULATE:rescaleTrees (25)
+Jul-23 19:44:23.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: SIMULATE:rescaleTrees (27); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/7f/2868534d76d0395393e6682fe97c68]
+Jul-23 19:44:23.852 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:23.853 [Task submitter] INFO  nextflow.Session - [c9/17cae9] Submitted process > SIMULATE:rescaleTrees (37)
+Jul-23 19:44:24.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: SIMULATE:rescaleTrees (28); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e8/1ed4b1832e48329c3d3483f21e84b1]
+Jul-23 19:44:24.789 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:24.792 [Task submitter] INFO  nextflow.Session - [28/cc037e] Submitted process > SIMULATE:rescaleTrees (31)
+Jul-23 19:44:24.862 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: SIMULATE:rescaleTrees (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3f/7bf2cfc29c1097b575716661379b15]
+Jul-23 19:44:24.866 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:24.866 [Task submitter] INFO  nextflow.Session - [9b/40efd8] Submitted process > SIMULATE:rescaleTrees (36)
+Jul-23 19:44:25.030 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: SIMULATE:rescaleTrees (26); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e1/6099db81f2b9dd0ca57537a6eac0aa]
+Jul-23 19:44:25.032 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.032 [Task submitter] INFO  nextflow.Session - [7c/2d5af4] Submitted process > SIMULATE:rescaleTrees (34)
+Jul-23 19:44:25.170 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: SIMULATE:rescaleTrees (30); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/be/6ea391ee89121c5453f43f2487db99]
+Jul-23 19:44:25.172 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.172 [Task submitter] INFO  nextflow.Session - [0c/1a3c73] Submitted process > SIMULATE:rescaleTrees (40)
+Jul-23 19:44:25.268 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: SIMULATE:rescaleTrees (25); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/39/86e00e22dd9262b151a6150c2d4e22]
+Jul-23 19:44:25.271 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.271 [Task submitter] INFO  nextflow.Session - [72/360d1c] Submitted process > SIMULATE:rescaleTrees (39)
+Jul-23 19:44:25.315 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: SIMULATE:rescaleTrees (29); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c8/583541f11bde5319b506a94c292a34]
+Jul-23 19:44:25.318 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.318 [Task submitter] INFO  nextflow.Session - [b7/b4667f] Submitted process > SIMULATE:rescaleTrees (38)
+Jul-23 19:44:25.379 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: SIMULATE:rescaleTrees (33); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ae/5c5e24d22ae3013fc9211db44fb60b]
+Jul-23 19:44:25.382 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.382 [Task submitter] INFO  nextflow.Session - [b0/6e858b] Submitted process > SIMULATE:rescaleTrees (32)
+Jul-23 19:44:25.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: SIMULATE:rescaleTrees (37); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c9/17cae9219d9e30acbcb891757ce8a0]
+Jul-23 19:44:25.458 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:25.458 [Task submitter] INFO  nextflow.Session - [3a/dc4dea] Submitted process > SIMULATE:rescaleTrees (43)
+Jul-23 19:44:26.370 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: SIMULATE:rescaleTrees (31); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/28/cc037e504348a8bb8e3f92f6623eb3]
+Jul-23 19:44:26.383 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:26.383 [Task submitter] INFO  nextflow.Session - [c9/22ae59] Submitted process > SIMULATE:rescaleTrees (35)
+Jul-23 19:44:26.693 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: SIMULATE:rescaleTrees (34); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/7c/2d5af439bd1a3077fc5c8720a38634]
+Jul-23 19:44:26.697 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:26.697 [Task submitter] INFO  nextflow.Session - [c2/5c66ba] Submitted process > SIMULATE:rescaleTrees (41)
+Jul-23 19:44:26.816 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: SIMULATE:rescaleTrees (36); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/9b/40efd8a19d221594b74de011d1f449]
+Jul-23 19:44:26.822 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:26.822 [Task submitter] INFO  nextflow.Session - [6d/a15dcb] Submitted process > SIMULATE:rescaleTrees (42)
+Jul-23 19:44:26.900 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: SIMULATE:rescaleTrees (32); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b0/6e858b1774da8f26e7904de91c436a]
+Jul-23 19:44:26.903 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:26.903 [Task submitter] INFO  nextflow.Session - [13/0ae108] Submitted process > SIMULATE:rescaleTrees (47)
+Jul-23 19:44:26.965 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: SIMULATE:rescaleTrees (40); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/0c/1a3c736c1ea72d4953ece3192f098d]
+Jul-23 19:44:26.969 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:26.969 [Task submitter] INFO  nextflow.Session - [eb/45020d] Submitted process > SIMULATE:rescaleTrees (44)
+Jul-23 19:44:27.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: SIMULATE:rescaleTrees (39); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/72/360d1c6ab7428b44e77426c476ed0f]
+Jul-23 19:44:27.083 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:27.084 [Task submitter] INFO  nextflow.Session - [43/f0932f] Submitted process > SIMULATE:rescaleTrees (46)
+Jul-23 19:44:27.158 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: SIMULATE:rescaleTrees (38); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b7/b4667ff0ebb2e32264921d4f7f0ea9]
+Jul-23 19:44:27.161 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:27.161 [Task submitter] INFO  nextflow.Session - [64/01cdc9] Submitted process > SIMULATE:rescaleTrees (45)
+Jul-23 19:44:27.204 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: SIMULATE:rescaleTrees (43); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3a/dc4deaa1a7606342f547757b71eba8]
+Jul-23 19:44:27.206 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:27.207 [Task submitter] INFO  nextflow.Session - [d3/523f84] Submitted process > SIMULATE:rescaleTrees (48)
+Jul-23 19:44:28.180 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: SIMULATE:rescaleTrees (35); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c9/22ae59cbd00d1fdde182678ea08c9b]
+Jul-23 19:44:28.184 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.184 [Task submitter] INFO  nextflow.Session - [34/dce6db] Submitted process > SIMULATE:rescaleTrees (49)
+Jul-23 19:44:28.238 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: SIMULATE:rescaleTrees (42); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6d/a15dcb9ac10d54a4ac38607f65d417]
+Jul-23 19:44:28.242 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.243 [Task submitter] INFO  nextflow.Session - [76/dd66d1] Submitted process > SIMULATE:rescaleTrees (50)
+Jul-23 19:44:28.360 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: SIMULATE:rescaleTrees (41); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c2/5c66baf3c3fca792ab7b2a829e3ef9]
+Jul-23 19:44:28.362 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.362 [Task submitter] INFO  nextflow.Session - [82/b1d8b7] Submitted process > SIMULATE:rescaleTrees (52)
+Jul-23 19:44:28.495 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: SIMULATE:rescaleTrees (47); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/13/0ae10869cd916108cdf97fba51a513]
+Jul-23 19:44:28.498 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.498 [Task submitter] INFO  nextflow.Session - [55/7902ba] Submitted process > SIMULATE:rescaleTrees (53)
+Jul-23 19:44:28.566 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: SIMULATE:rescaleTrees (48); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d3/523f846c7dae74c25bec5df80fba10]
+Jul-23 19:44:28.569 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.569 [Task submitter] INFO  nextflow.Session - [32/ee289b] Submitted process > SIMULATE:rescaleTrees (51)
+Jul-23 19:44:28.645 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: SIMULATE:rescaleTrees (46); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/43/f0932fd5bf3f9f7b6cf2070c08e0a1]
+Jul-23 19:44:28.648 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.648 [Task submitter] INFO  nextflow.Session - [48/7fbbb3] Submitted process > SIMULATE:rescaleTrees (54)
+Jul-23 19:44:28.712 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: SIMULATE:rescaleTrees (44); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/eb/45020d7ef6a8ecc09869e6e39f2597]
+Jul-23 19:44:28.716 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.716 [Task submitter] INFO  nextflow.Session - [bc/6498cb] Submitted process > SIMULATE:generateReferenceGenome (1)
+Jul-23 19:44:28.779 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: SIMULATE:rescaleTrees (45); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/64/01cdc9ef86b35fb4eeeb9444b992b4]
+Jul-23 19:44:28.785 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.786 [Task submitter] INFO  nextflow.Session - [c6/9b2a61] Submitted process > SIMULATE:generateReferenceGenome (2)
+Jul-23 19:44:28.802 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: SIMULATE:generateReferenceGenome (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/bc/6498cb255866bef53b125334588e1f]
+Jul-23 19:44:28.804 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.805 [Task submitter] INFO  nextflow.Session - [3e/1b15cc] Submitted process > SIMULATE:generateReferenceGenome (3)
+Jul-23 19:44:28.854 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: SIMULATE:generateReferenceGenome (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c6/9b2a610fe49b5cfda73043c39b15c2]
+Jul-23 19:44:28.855 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.855 [Task submitter] INFO  nextflow.Session - [0d/c6c596] Submitted process > SIMULATE:generateReferenceGenome (4)
+Jul-23 19:44:28.868 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: SIMULATE:generateReferenceGenome (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3e/1b15ccc31c6d55435c9a5e3e1fd580]
+Jul-23 19:44:28.874 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.874 [Task submitter] INFO  nextflow.Session - [56/aa701e] Submitted process > SIMULATE:generateReferenceGenome (5)
+Jul-23 19:44:28.916 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: SIMULATE:generateReferenceGenome (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/0d/c6c596254e346dcbd4400e9446ecea]
+Jul-23 19:44:28.918 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.918 [Task submitter] INFO  nextflow.Session - [78/89143a] Submitted process > SIMULATE:generateReferenceGenome (6)
+Jul-23 19:44:28.930 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: SIMULATE:generateReferenceGenome (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/56/aa701e36e7708bf2bef0ac7b036641]
+Jul-23 19:44:28.934 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.934 [Task submitter] INFO  nextflow.Session - [83/dfb257] Submitted process > SIMULATE:generateReferenceGenome (7)
+Jul-23 19:44:28.990 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: SIMULATE:generateReferenceGenome (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/78/89143a32d01211416e062c3aed7b1a]
+Jul-23 19:44:28.993 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:28.993 [Task submitter] INFO  nextflow.Session - [0f/039a9d] Submitted process > SIMULATE:generateReferenceGenome (8)
+Jul-23 19:44:29.004 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: SIMULATE:generateReferenceGenome (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/83/dfb2574ee212b0c6dc1e584fcd9959]
+Jul-23 19:44:29.006 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.006 [Task submitter] INFO  nextflow.Session - [ed/cbb3e7] Submitted process > SIMULATE:generateReferenceGenome (9)
+Jul-23 19:44:29.081 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: SIMULATE:generateReferenceGenome (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/0f/039a9df47954ea03daa0b0249bb884]
+Jul-23 19:44:29.083 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.083 [Task submitter] INFO  nextflow.Session - [68/db3c56] Submitted process > SIMULATE:generateReferenceGenome (10)
+Jul-23 19:44:29.090 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: SIMULATE:generateReferenceGenome (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ed/cbb3e7f7f19b41a7e52ee469229750]
+Jul-23 19:44:29.096 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.096 [Task submitter] INFO  nextflow.Session - [00/74a184] Submitted process > SIMULATE:generateReferenceGenome (11)
+Jul-23 19:44:29.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: SIMULATE:generateReferenceGenome (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/68/db3c562207b48b6e88cab47fdf7f8e]
+Jul-23 19:44:29.201 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.201 [Task submitter] INFO  nextflow.Session - [bc/4dd85f] Submitted process > SIMULATE:generateReferenceGenome (12)
+Jul-23 19:44:29.208 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: SIMULATE:generateReferenceGenome (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/00/74a1844f309e7ed7351c9a7e794fe0]
+Jul-23 19:44:29.210 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.210 [Task submitter] INFO  nextflow.Session - [f7/f9dbc8] Submitted process > SIMULATE:generateReferenceGenome (13)
+Jul-23 19:44:29.319 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: SIMULATE:generateReferenceGenome (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/bc/4dd85f16afc56c2855cf5df05a9191]
+Jul-23 19:44:29.323 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.324 [Task submitter] INFO  nextflow.Session - [8a/3d6e71] Submitted process > SIMULATE:generateReferenceGenome (14)
+Jul-23 19:44:29.341 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 78; name: SIMULATE:generateReferenceGenome (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f7/f9dbc8a7fbe482b4f5c948ec11574a]
+Jul-23 19:44:29.344 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.345 [Task submitter] INFO  nextflow.Session - [63/852955] Submitted process > SIMULATE:generateReferenceGenome (15)
+Jul-23 19:44:29.419 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 79; name: SIMULATE:generateReferenceGenome (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/8a/3d6e71e32d406aedca4d47ce35a2a1]
+Jul-23 19:44:29.421 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.421 [Task submitter] INFO  nextflow.Session - [b3/6d2454] Submitted process > SIMULATE:generateReferenceGenome (16)
+Jul-23 19:44:29.425 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: SIMULATE:generateReferenceGenome (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/63/8529553b8c7abf56e200e06b0e88c7]
+Jul-23 19:44:29.427 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.427 [Task submitter] INFO  nextflow.Session - [21/5a6d46] Submitted process > SIMULATE:generateReferenceGenome (17)
+Jul-23 19:44:29.482 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 81; name: SIMULATE:generateReferenceGenome (16); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b3/6d24544e42f9de72ae4761749083c2]
+Jul-23 19:44:29.485 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.485 [Task submitter] INFO  nextflow.Session - [d0/6bd357] Submitted process > SIMULATE:generateReferenceGenome (18)
+Jul-23 19:44:29.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: SIMULATE:generateReferenceGenome (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/21/5a6d46a1b516f68c2ad1a283cb2fd8]
+Jul-23 19:44:29.504 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.504 [Task submitter] INFO  nextflow.Session - [87/039ae0] Submitted process > SIMULATE:generateReferenceGenome (19)
+Jul-23 19:44:29.601 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 83; name: SIMULATE:generateReferenceGenome (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d0/6bd3570116262f93d07be8acf0879a]
+Jul-23 19:44:29.605 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.606 [Task submitter] INFO  nextflow.Session - [6c/548615] Submitted process > SIMULATE:generateReferenceGenome (20)
+Jul-23 19:44:29.614 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 84; name: SIMULATE:generateReferenceGenome (19); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/87/039ae04e84882db704525590e1fa99]
+Jul-23 19:44:29.618 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.619 [Task submitter] INFO  nextflow.Session - [5d/10449d] Submitted process > SIMULATE:generateReferenceGenome (21)
+Jul-23 19:44:29.716 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 85; name: SIMULATE:generateReferenceGenome (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6c/548615c9a3c7616c27aac2772d2423]
+Jul-23 19:44:29.718 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.718 [Task submitter] INFO  nextflow.Session - [c8/1f8107] Submitted process > SIMULATE:generateReferenceGenome (22)
+Jul-23 19:44:29.719 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 86; name: SIMULATE:generateReferenceGenome (21); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/5d/10449d8695b13d3adfab7fb7289107]
+Jul-23 19:44:29.721 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.721 [Task submitter] INFO  nextflow.Session - [c5/df715b] Submitted process > SIMULATE:generateReferenceGenome (23)
+Jul-23 19:44:29.805 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 87; name: SIMULATE:generateReferenceGenome (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c8/1f8107fa56a4579d97f236bee8dafd]
+Jul-23 19:44:29.806 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 88; name: SIMULATE:generateReferenceGenome (23); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c5/df715b5c172f458bdee68a656ba124]
+Jul-23 19:44:29.807 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.807 [Task submitter] INFO  nextflow.Session - [95/c24fa8] Submitted process > SIMULATE:generateReferenceGenome (24)
+Jul-23 19:44:29.810 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.810 [Task submitter] INFO  nextflow.Session - [f6/36e457] Submitted process > SIMULATE:generateReferenceGenome (25)
+Jul-23 19:44:29.967 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 89; name: SIMULATE:generateReferenceGenome (24); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/95/c24fa8068888e6abc8a0cf832d2dca]
+Jul-23 19:44:29.972 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.972 [Task submitter] INFO  nextflow.Session - [7d/7d1bb1] Submitted process > SIMULATE:generateReferenceGenome (26)
+Jul-23 19:44:29.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 90; name: SIMULATE:generateReferenceGenome (25); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f6/36e457fe37ef444d324f6e3c4dec54]
+Jul-23 19:44:29.983 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:29.983 [Task submitter] INFO  nextflow.Session - [63/e3851f] Submitted process > SIMULATE:generateReferenceGenome (27)
+Jul-23 19:44:30.057 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 91; name: SIMULATE:generateReferenceGenome (26); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/7d/7d1bb1ebcaa597a6f17f5497dacfd5]
+Jul-23 19:44:30.057 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 92; name: SIMULATE:generateReferenceGenome (27); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/63/e3851f9ddb74c46156c750b8f53ebe]
+Jul-23 19:44:30.060 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.060 [Task submitter] INFO  nextflow.Session - [89/2e697d] Submitted process > SIMULATE:generateReferenceGenome (28)
+Jul-23 19:44:30.061 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.061 [Task submitter] INFO  nextflow.Session - [e9/2be07a] Submitted process > SIMULATE:generateReferenceGenome (29)
+Jul-23 19:44:30.198 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 93; name: SIMULATE:generateReferenceGenome (28); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/89/2e697df50dc019540d3896753fc635]
+Jul-23 19:44:30.199 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 94; name: SIMULATE:generateReferenceGenome (29); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e9/2be07ab6230719245c94407b910fe4]
+Jul-23 19:44:30.200 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.201 [Task submitter] INFO  nextflow.Session - [06/d7f3e7] Submitted process > SIMULATE:generateReferenceGenome (30)
+Jul-23 19:44:30.202 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.202 [Task submitter] INFO  nextflow.Session - [b2/c54232] Submitted process > SIMULATE:generateReferenceGenome (31)
+Jul-23 19:44:30.314 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: SIMULATE:rescaleTrees (49); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/34/dce6db3432d1aef20054e629533f69]
+Jul-23 19:44:30.314 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 96; name: SIMULATE:generateReferenceGenome (31); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b2/c54232d6ebff893e8ac075445e8a15]
+Jul-23 19:44:30.318 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.318 [Task submitter] INFO  nextflow.Session - [61/984d87] Submitted process > SIMULATE:generateReferenceGenome (32)
+Jul-23 19:44:30.322 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.322 [Task submitter] INFO  nextflow.Session - [83/46c861] Submitted process > SIMULATE:generateReferenceGenome (33)
+Jul-23 19:44:30.335 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 95; name: SIMULATE:generateReferenceGenome (30); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/06/d7f3e74a49c68f8856b78d1b6e20cc]
+Jul-23 19:44:30.339 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.340 [Task submitter] INFO  nextflow.Session - [fd/251eab] Submitted process > SIMULATE:generateReferenceGenome (34)
+Jul-23 19:44:30.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 97; name: SIMULATE:generateReferenceGenome (32); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/61/984d874bdf32b56a0eb53d50331684]
+Jul-23 19:44:30.400 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 98; name: SIMULATE:generateReferenceGenome (33); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/83/46c8614f07da2a36bcecf12efc64df]
+Jul-23 19:44:30.401 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 99; name: SIMULATE:generateReferenceGenome (34); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/fd/251eab78c7cbb08d8caa6929aaec76]
+Jul-23 19:44:30.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.402 [Task submitter] INFO  nextflow.Session - [c4/e05183] Submitted process > SIMULATE:generateReferenceGenome (35)
+Jul-23 19:44:30.403 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.405 [Task submitter] INFO  nextflow.Session - [3a/1796d9] Submitted process > SIMULATE:generateReferenceGenome (36)
+Jul-23 19:44:30.410 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.411 [Task submitter] INFO  nextflow.Session - [8a/f7e648] Submitted process > SIMULATE:generateReferenceGenome (37)
+Jul-23 19:44:30.503 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 100; name: SIMULATE:generateReferenceGenome (35); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c4/e051835f238aa9b766d6dcebae9c9e]
+Jul-23 19:44:30.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 101; name: SIMULATE:generateReferenceGenome (36); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3a/1796d95dc639ca5e628cdc85376199]
+Jul-23 19:44:30.507 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.507 [Task submitter] INFO  nextflow.Session - [6e/0b22c4] Submitted process > SIMULATE:generateReferenceGenome (38)
+Jul-23 19:44:30.510 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 102; name: SIMULATE:generateReferenceGenome (37); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/8a/f7e648e9403f3bb698680799f8ba11]
+Jul-23 19:44:30.521 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.521 [Task submitter] INFO  nextflow.Session - [7a/454173] Submitted process > SIMULATE:generateReferenceGenome (39)
+Jul-23 19:44:30.526 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.526 [Task submitter] INFO  nextflow.Session - [fd/db457d] Submitted process > SIMULATE:generateReferenceGenome (40)
+Jul-23 19:44:30.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 103; name: SIMULATE:generateReferenceGenome (38); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6e/0b22c419e3831de9619257a44c60a3]
+Jul-23 19:44:30.610 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.611 [Task submitter] INFO  nextflow.Session - [b1/ffa7b6] Submitted process > SIMULATE:generateReferenceGenome (41)
+Jul-23 19:44:30.629 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 104; name: SIMULATE:generateReferenceGenome (39); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/7a/4541734fcb12b2c06ba2bebdbad156]
+Jul-23 19:44:30.631 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.632 [Task submitter] INFO  nextflow.Session - [2b/7232d1] Submitted process > SIMULATE:generateReferenceGenome (42)
+Jul-23 19:44:30.645 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 105; name: SIMULATE:generateReferenceGenome (40); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/fd/db457d122417324ee0a1128f03ca1e]
+Jul-23 19:44:30.649 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.649 [Task submitter] INFO  nextflow.Session - [1b/119e7a] Submitted process > SIMULATE:generateReferenceGenome (43)
+Jul-23 19:44:30.675 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: SIMULATE:rescaleTrees (52); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/82/b1d8b7568fe365cc99749e451d7f35]
+Jul-23 19:44:30.678 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.679 [Task submitter] INFO  nextflow.Session - [b1/d5d2e8] Submitted process > SIMULATE:generateReferenceGenome (44)
+Jul-23 19:44:30.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 106; name: SIMULATE:generateReferenceGenome (41); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b1/ffa7b631470a65af3f5205954d5be7]
+Jul-23 19:44:30.733 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.733 [Task submitter] INFO  nextflow.Session - [f7/be4def] Submitted process > SIMULATE:generateReferenceGenome (45)
+Jul-23 19:44:30.735 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 107; name: SIMULATE:generateReferenceGenome (42); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/2b/7232d1623575beedbd46f8433f4f6f]
+Jul-23 19:44:30.737 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.737 [Task submitter] INFO  nextflow.Session - [bd/be9dd5] Submitted process > SIMULATE:generateReferenceGenome (46)
+Jul-23 19:44:30.750 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 108; name: SIMULATE:generateReferenceGenome (43); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/1b/119e7aabe1d897018408c51d52fc92]
+Jul-23 19:44:30.753 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.753 [Task submitter] INFO  nextflow.Session - [0d/fb9426] Submitted process > SIMULATE:generateReferenceGenome (47)
+Jul-23 19:44:30.783 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 109; name: SIMULATE:generateReferenceGenome (44); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/b1/d5d2e8cd8382599e517ecd993f097b]
+Jul-23 19:44:30.787 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.787 [Task submitter] INFO  nextflow.Session - [6c/dad096] Submitted process > SIMULATE:generateReferenceGenome (48)
+Jul-23 19:44:30.811 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 110; name: SIMULATE:generateReferenceGenome (45); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f7/be4deff4728fcf48edff5e1b1a2382]
+Jul-23 19:44:30.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 111; name: SIMULATE:generateReferenceGenome (46); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/bd/be9dd5b9afa467986179298fcbaaa4]
+Jul-23 19:44:30.818 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.819 [Task submitter] INFO  nextflow.Session - [53/34ec5e] Submitted process > SIMULATE:phastSim (1)
+Jul-23 19:44:30.823 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.824 [Task submitter] INFO  nextflow.Session - [c8/03ff7f] Submitted process > SIMULATE:phastSim (2)
+Jul-23 19:44:30.857 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 112; name: SIMULATE:generateReferenceGenome (47); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/0d/fb9426bbb5a387c4fe13452b3a78f7]
+Jul-23 19:44:30.860 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.860 [Task submitter] INFO  nextflow.Session - [14/d0deb4] Submitted process > SIMULATE:phastSim (3)
+Jul-23 19:44:30.886 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 113; name: SIMULATE:generateReferenceGenome (48); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6c/dad096aa959c3028a03d410fdd30b2]
+Jul-23 19:44:30.889 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:30.889 [Task submitter] INFO  nextflow.Session - [67/8fa1fc] Submitted process > SIMULATE:phastSim (4)
+Jul-23 19:44:31.060 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: SIMULATE:rescaleTrees (54); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/48/7fbbb3a063cd5242e8327f34ca1bcb]
+Jul-23 19:44:31.064 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:31.064 [Task submitter] INFO  nextflow.Session - [82/5bf980] Submitted process > SIMULATE:phastSim (5)
+Jul-23 19:44:31.145 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: SIMULATE:rescaleTrees (53); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/55/7902bac1bae38f1a6756b93fd8a1d4]
+Jul-23 19:44:31.149 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:31.149 [Task submitter] INFO  nextflow.Session - [da/f1cd91] Submitted process > SIMULATE:phastSim (6)
+Jul-23 19:44:31.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: SIMULATE:rescaleTrees (50); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/76/dd66d153329d259a4b8cdea7c106b8]
+Jul-23 19:44:31.230 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:31.230 [Task submitter] INFO  nextflow.Session - [61/45adc1] Submitted process > SIMULATE:phastSim (7)
+Jul-23 19:44:31.313 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: SIMULATE:rescaleTrees (51); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/32/ee289bfee6dafe0d56d1e4b6f1c6e0]
+Jul-23 19:44:31.317 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:31.317 [Task submitter] INFO  nextflow.Session - [c3/559a83] Submitted process > SIMULATE:phastSim (8)
+Jul-23 19:44:32.600 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 115; name: SIMULATE:phastSim (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c8/03ff7f2b01c369be0d54bd5e79c53d]
+Jul-23 19:44:32.619 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:32.619 [Task submitter] INFO  nextflow.Session - [a2/34c85c] Submitted process > SIMULATE:phastSim (9)
+Jul-23 19:44:32.747 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 121; name: SIMULATE:phastSim (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c3/559a8324fa4336b3e335e90343c0b4]
+Jul-23 19:44:32.749 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:32.749 [Task submitter] INFO  nextflow.Session - [6c/f3654b] Submitted process > SIMULATE:phastSim (10)
+Jul-23 19:44:32.886 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 116; name: SIMULATE:phastSim (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/14/d0deb4c2f29402bd7f20a069bf7e1f]
+Jul-23 19:44:32.888 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:32.889 [Task submitter] INFO  nextflow.Session - [03/a3f07f] Submitted process > SIMULATE:phastSim (11)
+Jul-23 19:44:33.177 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 119; name: SIMULATE:phastSim (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/da/f1cd91d0ebc409b227a218be61e8ae]
+Jul-23 19:44:33.194 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:33.195 [Task submitter] INFO  nextflow.Session - [39/316718] Submitted process > SIMULATE:phastSim (12)
+Jul-23 19:44:34.252 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 122; name: SIMULATE:phastSim (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/a2/34c85c1d3ae5d6094851114cd2f463]
+Jul-23 19:44:34.265 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:34.265 [Task submitter] INFO  nextflow.Session - [75/986389] Submitted process > SIMULATE:phastSim (13)
+Jul-23 19:44:34.717 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 124; name: SIMULATE:phastSim (11); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/03/a3f07f02b570b2837c9969e1a9ac7b]
+Jul-23 19:44:34.721 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:34.722 [Task submitter] INFO  nextflow.Session - [57/1e175d] Submitted process > SIMULATE:phastSim (14)
+Jul-23 19:44:34.818 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 125; name: SIMULATE:phastSim (12); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/39/3167188d8ad576a2aa9edc48365af1]
+Jul-23 19:44:34.839 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:34.839 [Task submitter] INFO  nextflow.Session - [9d/e2f50d] Submitted process > SIMULATE:phastSim (15)
+Jul-23 19:44:34.953 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 123; name: SIMULATE:phastSim (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/6c/f3654be6c76327cddbfca8fbde1d75]
+Jul-23 19:44:34.956 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:34.956 [Task submitter] INFO  nextflow.Session - [f7/31e806] Submitted process > SIMULATE:phastSim (16)
+Jul-23 19:44:35.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 114; name: SIMULATE:phastSim (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/53/34ec5e91ea82a8d5a4e1e83574ad34]
+Jul-23 19:44:35.560 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:35.561 [Task submitter] INFO  nextflow.Session - [4d/7b593e] Submitted process > SIMULATE:phastSim (17)
+Jul-23 19:44:35.695 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 126; name: SIMULATE:phastSim (13); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/75/986389f234ccedde7d0c2d4b475a3e]
+Jul-23 19:44:35.699 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:35.699 [Task submitter] INFO  nextflow.Session - [34/dc20d6] Submitted process > SIMULATE:phastSim (18)
+Jul-23 19:44:35.986 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 120; name: SIMULATE:phastSim (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/61/45adc1ad38623d5ccc09291be2efa1]
+Jul-23 19:44:35.988 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:35.988 [Task submitter] INFO  nextflow.Session - [db/9f5961] Submitted process > SIMULATE:phastSim (19)
+Jul-23 19:44:37.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 131; name: SIMULATE:phastSim (18); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/34/dc20d6433607b68c1ee1ad19835d40]
+Jul-23 19:44:37.135 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:37.135 [Task submitter] INFO  nextflow.Session - [ce/df442f] Submitted process > SIMULATE:phastSim (20)
+Jul-23 19:44:38.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 133; name: SIMULATE:phastSim (20); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ce/df442f62da346e6661ea283d267092]
+Jul-23 19:44:38.210 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:38.211 [Task submitter] INFO  nextflow.Session - [ec/57406d] Submitted process > SIMULATE:phastSim (21)
+Jul-23 19:44:38.709 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 130; name: SIMULATE:phastSim (17); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/4d/7b593e2accdb1db1143ebd619e4578]
+Jul-23 19:44:38.712 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:38.713 [Task submitter] INFO  nextflow.Session - [45/e23df8] Submitted process > SIMULATE:phastSim (23)
+Jul-23 19:44:39.039 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 127; name: SIMULATE:phastSim (14); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/57/1e175ddbb619984c3a775b147d31b1]
+Jul-23 19:44:39.044 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:39.044 [Task submitter] INFO  nextflow.Session - [3d/5b947c] Submitted process > SIMULATE:phastSim (22)
+Jul-23 19:44:44.400 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 117; name: SIMULATE:phastSim (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/67/8fa1fc01700b18c5b1d3d2ff49999b]
+Jul-23 19:44:44.404 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:44.405 [Task submitter] INFO  nextflow.Session - [95/a65021] Submitted process > SIMULATE:phastSim (24)
+Jul-23 19:44:45.321 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 128; name: SIMULATE:phastSim (15); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/9d/e2f50de072b5608a7765346b1f4812]
+Jul-23 19:44:45.326 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:45.326 [Task submitter] INFO  nextflow.Session - [92/50895b] Submitted process > SIMULATE:phastSim (25)
+Jul-23 19:44:45.456 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 135; name: SIMULATE:phastSim (22); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/3d/5b947c6c1eb96f3ada92f7f6c99c3b]
+Jul-23 19:44:45.462 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:45.463 [Task submitter] INFO  nextflow.Session - [e0/6c34e1] Submitted process > SIMULATE:phastSim (26)
+Jul-23 19:44:45.797 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 137; name: SIMULATE:phastSim (24); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/95/a65021c42d7467ed82aae36c408738]
+Jul-23 19:44:45.801 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:45.801 [Task submitter] INFO  nextflow.Session - [4a/e0dfab] Submitted process > SIMULATE:phastSim (27)
+Jul-23 19:44:46.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 140; name: SIMULATE:phastSim (27); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/4a/e0dfabd83ec76096e4d953bfc79cf6]
+Jul-23 19:44:46.844 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:46.844 [Task submitter] INFO  nextflow.Session - [70/885a99] Submitted process > SIMULATE:phastSim (28)
+Jul-23 19:44:46.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 139; name: SIMULATE:phastSim (26); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/e0/6c34e187bccd56a346fae350dc57d6]
+Jul-23 19:44:46.990 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:46.990 [Task submitter] INFO  nextflow.Session - [89/e5b166] Submitted process > SIMULATE:phastSim (29)
+Jul-23 19:44:48.200 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 141; name: SIMULATE:phastSim (28); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/70/885a9940976d2c44abc8cc48909c79]
+Jul-23 19:44:48.204 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:48.204 [Task submitter] INFO  nextflow.Session - [c2/1e5903] Submitted process > SIMULATE:generateReferenceGenome (49)
+Jul-23 19:44:48.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 143; name: SIMULATE:generateReferenceGenome (49); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/c2/1e59036692507a20abc0bf254501be]
+Jul-23 19:44:48.294 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:48.294 [Task submitter] INFO  nextflow.Session - [f0/438db7] Submitted process > SIMULATE:phastSim (30)
+Jul-23 19:44:48.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 138; name: SIMULATE:phastSim (25); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/92/50895b4a4bb69f28d971134b6dec3b]
+Jul-23 19:44:48.532 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:48.532 [Task submitter] INFO  nextflow.Session - [78/3082e0] Submitted process > SIMULATE:phastSim (31)
+Jul-23 19:44:49.251 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 136; name: SIMULATE:phastSim (23); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/45/e23df8932e4eb1001c73e13508dfaf]
+Jul-23 19:44:49.255 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:49.255 [Task submitter] INFO  nextflow.Session - [81/39f0e8] Submitted process > SIMULATE:phastSim (32)
+Jul-23 19:44:49.716 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 144; name: SIMULATE:phastSim (30); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/f0/438db794f4ffd08d2e3dd8eb0e56d6]
+Jul-23 19:44:49.727 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:49.728 [Task submitter] INFO  nextflow.Session - [24/ce852b] Submitted process > SIMULATE:phastSim (34)
+Jul-23 19:44:50.362 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 146; name: SIMULATE:phastSim (32); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/81/39f0e8404a0c9451ecbf3343d56709]
+Jul-23 19:44:50.368 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:50.369 [Task submitter] INFO  nextflow.Session - [cd/88bed1] Submitted process > SIMULATE:phastSim (33)
+Jul-23 19:44:51.387 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 147; name: SIMULATE:phastSim (33); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/cd/88bed1c03fdca873478bafe16d4e8b]
+Jul-23 19:44:51.397 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:51.398 [Task submitter] INFO  nextflow.Session - [04/c500e3] Submitted process > SIMULATE:phastSim (36)
+Jul-23 19:44:52.225 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 148; name: SIMULATE:phastSim (34); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/24/ce852b5d88abea5b97f2d21e51fea4]
+Jul-23 19:44:52.228 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:52.229 [Task submitter] INFO  nextflow.Session - [6c/a7c61e] Submitted process > SIMULATE:phastSim (35)
+Jul-23 19:44:52.534 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 150; name: SIMULATE:phastSim (36); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/04/c500e3c9781c37f566965ab3d3bcb4]
+Jul-23 19:44:52.540 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:52.541 [Task submitter] INFO  nextflow.Session - [ae/279499] Submitted process > SIMULATE:phastSim (37)
+Jul-23 19:44:54.351 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 151; name: SIMULATE:phastSim (37); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/ae/279499202af885645e6ead77cfe4fc]
+Jul-23 19:44:54.355 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:54.355 [Task submitter] INFO  nextflow.Session - [a8/d6c7ff] Submitted process > SIMULATE:phastSim (38)
+Jul-23 19:44:55.370 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 152; name: SIMULATE:phastSim (38); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/a8/d6c7ffdddbf13be588d1c7cd32aef0]
+Jul-23 19:44:55.379 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:55.380 [Task submitter] INFO  nextflow.Session - [46/339339] Submitted process > SIMULATE:phastSim (39)
+Jul-23 19:44:56.430 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 153; name: SIMULATE:phastSim (39); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/46/339339ff9a87aad5b3b368e3aecb5d]
+Jul-23 19:44:56.435 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:56.435 [Task submitter] INFO  nextflow.Session - [d2/4213d5] Submitted process > SIMULATE:phastSim (40)
+Jul-23 19:44:56.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 145; name: SIMULATE:phastSim (31); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/78/3082e0fdbbe001df11ab64070bcd85]
+Jul-23 19:44:56.773 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:56.774 [Task submitter] INFO  nextflow.Session - [16/dc61e3] Submitted process > SIMULATE:generateReferenceGenome (50)
+Jul-23 19:44:56.866 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 155; name: SIMULATE:generateReferenceGenome (50); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/16/dc61e3ddad905a6202bdf3fd4cf567]
+Jul-23 19:44:56.870 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:56.870 [Task submitter] INFO  nextflow.Session - [00/24c621] Submitted process > SIMULATE:phastSim (42)
+Jul-23 19:44:57.591 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 154; name: SIMULATE:phastSim (40); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d2/4213d5f42487d42a34275b8454e3f8]
+Jul-23 19:44:57.595 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:44:57.595 [Task submitter] INFO  nextflow.Session - [48/1399c3] Submitted process > SIMULATE:phastSim (41)
+Jul-23 19:45:03.863 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 156; name: SIMULATE:phastSim (41); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/48/1399c348874a001639c383bd673deb]
+Jul-23 19:45:03.868 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:03.870 [Task submitter] INFO  nextflow.Session - [d7/169701] Submitted process > SIMULATE:phastSim (43)
+Jul-23 19:45:07.544 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 158; name: SIMULATE:phastSim (43); status: COMPLETED; exit: 0; error: -; workDir: /Users/tc25/projects/weiwen_dissertation/work/d7/1697012501a4edf1ed0727a8ec5537]
+Jul-23 19:45:07.550 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 19:45:07.550 [Task submitter] INFO  nextflow.Session - [3a/4318e0] Submitted process > SIMULATE:phastSim (44)
+Jul-23 19:45:09.381 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Jul-23 19:45:09.397 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] SIMULATE:phastSim
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SIMULATE:checkAlignments
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SIMULATE:collectReports
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: report_files
+  port 1: (cntrl) -     ; channel: $
+
+[process] SIMULATE:makeUnique
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jul-23 19:45:09.400 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-23 19:45:09.400 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-23 19:45:09.401 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-23 19:45:09.412 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (8)
+Jul-23 19:45:09.541 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=151; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=82; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=8; succeedDuration=4m 25s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=8; peakCpus=8; peakMemory=3.9 GB; ]
+Jul-23 19:45:09.553 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-23 19:45:09.598 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

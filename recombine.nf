@@ -18,7 +18,7 @@ process recombine_generate {
 
     script:
     """
-    python3 ${projectDir}/recombination_demo.py --tree ${tree_file} --fasta_dir ${projectDir}/results/sequences_clean/
+    python3 ${projectDir}/bin/recombination_demo.py --tree ${tree_file} --fasta_dir ${projectDir}/results/sequences_clean/
     """
 }
 
