@@ -93,18 +93,19 @@ process phastSim {
 
     output:
     tuple val(meta), path("${meta.id}.fasta"), emit: fasta
+    tuple val(meta), path("${meta.id}.info"), emit: info
 
     script:
     def prefix = "${meta.id}"
     """
     phastSim --outpath ./ --reference ${reference} --treeFile ${tree_file} \
         --categoryRates 1.0 1.1 1.5 2.0 --categoryProbs 0.9 0.01 0.04 0.05 \
-        --outputFile ${prefix} --createFasta 
+        --outputFile ${prefix} --createFasta --createInfo
     """
 }
 
 process checkAlignments {
-    publishDir "${params.outdir}/sequences", mode: 'copy'
+    publishDir "${params.outdir}/reports", mode: 'copy'
 
     container 'tkchafin/numpy:latest'
 
@@ -112,7 +113,7 @@ process checkAlignments {
     tuple val(meta), path(fasta_file)
 
     output:
-    tuple val(meta), path("*_report.txt"), emit: report
+    path("*_report.txt"), emit: report
 
     script:
     def prefix = "${meta.id}"
@@ -152,23 +153,23 @@ process collectReports {
     """
 }
 
-process makeUnique {
-    publishDir "${params.outdir}/sequences_clean", mode: 'copy'
+// process makeUnique {
+//     publishDir "${params.outdir}/sequences_clean", mode: 'copy'
 
-    container 'tkchafin/numpy:latest'
+//     //container 'tkchafin/numpy:latest'
 
-    input:
-    tuple val(meta), path(fasta_file)
+//     input:
+//     tuple val(meta), path(fasta_file)
 
-    output:
-    tuple val(meta), path("*.validated.fasta"), emit: fasta
+//     output:
+//     tuple val(meta), path("*.validated.fasta"), emit: fasta
 
-    script:
-    def prefix = "${meta.id}"
-    """
-    make_unique_fasta.py --fasta ${fasta_file} --prefix ${prefix}
-    """
-}
+//     script:
+//     def prefix = "${meta.id}"
+//     """
+//     make_unique_fasta.py --fasta ${fasta_file} --prefix ${prefix}
+//     """
+// }
 
 workflow SIMULATE {
     take:
@@ -213,21 +214,16 @@ workflow SIMULATE {
                 | join( generateReferenceGenome.out.fasta )
         )
         
-        // Check alignments
-        checkAlignments( phastSim.out.fasta )
-            .map{ meta, report -> report }
-            .flatMap { it }
-            .collect { it }
-            .set { report_files }
+        // // Check alignments
+        // checkAlignments(phastSim.out.fasta)
+        //     .flatMap { it }
+        //     .collect { it }
+        //     .set { report_files }
 
-        // Collect reports
-        collectReports( report_files )
-        
-        // make sequences unique
-        makeUnique( phastSim.out.fasta )
+        // // Collect reports
+        // collectReports( report_files )
 
-        // add recombinants
 
     emit:
-        makeUnique.out.fasta
+        phastSim.out.fasta
 }
